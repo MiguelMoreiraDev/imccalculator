@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Css -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css"
+        />
+        <title>Calculadora - IMC</title>
+    </head>
+    <body>
+        <main class="container">
+            <section class="container-img">
+                <img
+                    src="./assets/undraw_working_out_re_nhkg (1).svg"
+                    alt="people making workout"
+                />
+            </section>
+            <section class="calculator">
+                <div class="calculator-top">
+                    <h1>Calculadora - IMC</h1>
+                    <form class="form">
+                        <div class="form-item">
+                            <label for="peso">Peso em kg</label>
+                            <div class="form-input">
+                                <i class="fi fi-ss-scale"></i>
+                                <input type="number" name="peso" id="peso" />
+                                <span>kg</span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="altura">Altura em metros</label>
+                            <div class="form-input">
+                                <i class="fi fi-ss-ruler-horizontal"></i>
+                                <input
+                                    type="number"
+                                    name="altura"
+                                    id="altura"
+                                />
+                                <span>m</span>
+                            </div>
+                        </div>
+                        <button class="button">Calcular</button>
+                    </form>
+                </div>
+                <div class="calculator-mid hidden">
+                    <div class="result">
+                        <h3 id="value"></h3>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div class="imc-result">
+                        <h4 id="desc"></h4>
+                    </div>
+                </div>
+                <div class="calculator-bottom">
+                    <a href="/">Mais informações sobre o IMC</a>
+                </div>
+            </section>
+        </main>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
